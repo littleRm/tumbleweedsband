@@ -25,6 +25,17 @@ get_header(); ?>
 						<?php the_title( '<h2>', '</h2>' ); ?>
 						<?php the_content(); ?>
 					</div><!-- .bio -->
+					
+					<div id="players">
+					<h4>More Bios</h4>
+						<ul>
+						<? 
+							if(is_page() && $post->post_parent){
+								 wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent.'&exclude='.get_the_ID());
+							}
+						?>
+						</ul>
+					</div>
 				
 				</article><!-- #post-## -->
 
