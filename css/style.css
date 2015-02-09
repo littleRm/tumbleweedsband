@@ -1,0 +1,1247 @@
+.clearfix:before, .container:before,
+.row:before, .bio:before, span.gigpress-info-item:before,
+.clearfix:after,
+.container:after,
+.row:after,
+.bio:after,
+span.gigpress-info-item:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after, .container:after,
+.row:after, .bio:after, span.gigpress-info-item:after {
+  clear: both; }
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+html {
+  font-family: bitter, Georgia, serif;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #555147;
+  background-color: #EBEBE7;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none; }
+
+html, body {
+  height: 100%;
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */ }
+
+body {
+  background: #EBEBE7;
+  font-family: bitter, Georgia, serif;
+  color: #414141;
+  font-size: 16px;
+  line-height: 1.375; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: bitter, Georgia, serif;
+  color: #555147;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 1em 0 15px;
+  padding: 0; }
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25em; }
+  h1 a {
+    color: inherit; }
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615em; }
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364em; }
+
+h4 {
+  font-size: 1.25em;
+  line-height: 1.11111111em; }
+
+h5 {
+  color: #747678;
+  font-size: 1.125em; }
+
+h6 {
+  color: #747678;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+p {
+  margin: 15px 0; }
+
+a {
+  color: #A54A25;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover, a:active {
+    color: #EB9728; }
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px; }
+
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0; }
+
+ul ul, ol ul {
+  list-style-type: circle; }
+
+em, i {
+  font-style: italic; }
+
+strong, b {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1.8em 0 0 0;
+  border-left: 2px solid #747678;
+  padding: 0 1em;
+  color: #747678;
+  font-size: 22px;
+  font-style: italic; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+figure {
+  margin-bottom: 1.24em; }
+
+figcaption {
+  font-family: bitter, Georgia, serif;
+  color: #747678; }
+
+.grid-dynamic figcaption, .player figcaption {
+  text-align: center; }
+
+.thumb {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-right: .75em; }
+
+abbr[title],
+dfn[title] {
+  color: #747678;
+  border-bottom: 1px dashed #747678;
+  cursor: help; }
+
+a, u, ins {
+  text-decoration: none; }
+
+ins {
+  border-bottom: 1px solid; }
+
+samp {
+  background-color: #747678;
+  padding: 0.25em;
+  opacity: .8; }
+
+aside {
+  width: 100%;
+  text-align: left; }
+
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer; }
+
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none; }
+
+/* Wrap tables or pre elements in a div with this class */
+.overflow-container, table, pre {
+  overflow-y: scroll; }
+
+/*
+  Aspect ratios for media objects i.e canvas, iframe, video, svg etc.
+  Defaults to 16x9
+*/
+.aspect-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative; }
+
+.aspect-ratio--object {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+
+a img {
+  border: none;
+  background: none; }
+
+a:hover img {
+  border: none;
+  background: none;
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+img {
+  max-width: 100%; }
+
+::-moz-selection {
+  color: #414141;
+  background: #c2bdb5; }
+
+::selection {
+  color: #414141;
+  background: #c2bdb5; }
+
+hr {
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-bottom: 1px solid #747678;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  height: 2px;
+  padding: 0 1em .5em 1em; }
+
+.container {
+  max-width: 46em;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.row {
+  margin-left: -1.4%;
+  margin-right: -1.4%; }
+
+.grid-fourth, .grid-third, .grid-half, .grid-two-thirds, .grid-three-fourths, .grid-full, .grid-dynamic, .player {
+  float: left;
+  width: 100%;
+  padding-left: 1.4%;
+  padding-right: 1.4%; }
+
+/**
+ * Reverses order of grid for content choreography
+ */
+.grid-flip {
+  float: right; }
+
+/**
+ * Add columns to grid on bigger screens
+ */
+@media (min-width: 18em) {
+  .row-start-xsmall .grid-fourth {
+    width: 22%; }
+
+  .row-start-xsmall .grid-third {
+    width: 30%; }
+
+  .row-start-xsmall .grid-half {
+    width: 47%; }
+
+  .row-start-xsmall .grid-two-thirds {
+    width: 64%; }
+
+  .row-start-xsmall .grid-three-fourths {
+    width: 73%; }
+
+  .row-start-xsmall .grid-full {
+    width: 100%; } }
+@media (min-width: 25em) {
+  .row-start-small .grid-fourth {
+    width: 22%; }
+
+  .row-start-small .grid-third {
+    width: 30%; }
+
+  .row-start-small .grid-half {
+    width: 47%; }
+
+  .row-start-small .grid-two-thirds {
+    width: 64%; }
+
+  .row-start-small .grid-three-fourths {
+    width: 73%; }
+
+  .row-start-small .grid-full {
+    width: 100%; } }
+@media (min-width: 37em) {
+  .grid-fourth {
+    width: 22%; }
+
+  .grid-third {
+    width: 30%; }
+
+  .grid-half {
+    width: 47%; }
+
+  .grid-two-thirds {
+    width: 64%; }
+
+  .grid-three-fourths {
+    width: 73%; }
+
+  .grid-full {
+    width: 100%; }
+
+  .offset-fourth {
+    margin-left: 22%; }
+
+  .offset-third {
+    margin-left: 30%; }
+
+  .offset-half {
+    margin-left: 47%; }
+
+  .offset-two-thirds {
+    margin-left: 64%; }
+
+  .offset-three-fourths {
+    margin-left: 73%; }
+
+  .offset-full {
+    margin-left: 100%; } }
+/**
+ * Dynamic grid
+ */
+@media (min-width: 37em) {
+  .grid-dynamic, .player {
+    width: 47%; } }
+@media (min-width: 47.5em) {
+  .grid-dynamic, .player {
+    width: 30%; } }
+.wrapper-masthead {
+  padding-top: 1px;
+  background-color: #E4503B;
+  border-bottom: 1px solid #A54A25; }
+  @media screen and (min-width: 47.5em) {
+    .wrapper-masthead {
+      background-color: #EBEBE7;
+      border-bottom: 1px solid #EBEBE7;
+      height: 75px;
+      max-height: 75px; } }
+
+.logo {
+  width: 64%;
+  padding-bottom: .5em;
+  background-image: url(../img/tw-sm-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media screen and (min-width: 47.5em) {
+    .logo {
+      padding: .8em 0px;
+      margin-top: -40px;
+      margin-left: -1%;
+      z-index: 10001;
+      background-color: #E4503B;
+      width: 190px;
+      height: 190px;
+      border-radius: 100%;
+      padding: 0px 0px;
+      background-image: url(../img/tw-wide-bg.png);
+      background-size: contain;
+      background-repeat: no-repeat; } }
+  @media screen and (min-width: 64em) {
+    .logo {
+      margin-left: -5.5%; } }
+
+@media screen and (min-width: 47.5em) {
+  .logo img {
+    margin-top: 34%;
+    margin-bottom: 34%;
+    width: 240px;
+    height: auto;
+    z-index: 10002; } }
+
+.description {
+  padding: 1em .3em;
+  font-size: .8em;
+  color: #fff0c7; }
+  @media screen and (min-width: 47.5em) {
+    .description {
+      font-size: 1em; } }
+
+@media (max-width: 37em) {
+  .wrapper-masthead {
+    border-top: 3px solid #414141; } }
+/** Astro: Mobile-first navigation patterns by Chris Ferdinandi.
+ * http://github.com/cferdinandi/astro * Free to use under the MIT License. * http://gomakethings.com/mit/
+ */
+.nav-menu-basic-left {
+  margin-top: -18px;
+  background-color: #90381E;
+  position: relative; }
+
+.logo-basic-left {
+  display: inline-block;
+  color: #FFFFFF;
+  margin-bottom: calc-em(8px);
+  text-decoration: none;
+  position: relative; }
+
+.logo-basic-left:hover {
+  color: #414141;
+  text-decoration: none; }
+
+.nav-basic-left {
+  list-style: none;
+  margin: 0 calc-em(-8px);
+  padding: 0; }
+
+.nav-basic-left > li {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  float: none;
+  margin-left: 8px;
+  margin-right: 30px; }
+
+.nav-basic-left > li > a {
+  color: #f7f7f5; }
+
+.nav-basic-left > li > a:hover {
+  color: #FFDF85; }
+
+/* active link styling */
+.nav-basic-left > li.active > a {
+  background-color: #414141; }
+
+/*  Hide the navigation toggle menu button by default.
+ *  Only needed for expand-and-collapse option. */
+.nav-toggle-basic-left {
+  display: none;
+  visibility: hidden;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #414141;
+  padding: .5em 1em;
+  min-width: 42px; }
+
+.nav-toggle-basic-left:hover {
+  color: #FFDF85;
+  background-color: #262626; }
+
+/*  Expand-and-Collapse styling for smaller screens.
+ *  Remove if not using.
+ *  Change max-width to fit your project. */
+@media (max-width: 37em) {
+  .nav-menu-basic-left {
+    margin-top: -1px;
+    border-bottom: 3px solid #414141; }
+
+  .nav-basic-left > li {
+    margin-bottom: 8px;
+    font-size: 2em;
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  /*  .js-astro prefix ensure content is only hidden when JavaScript is supported.
+   *  This requires on the included js-accessibility.js-astro script. */
+  /*  Display navigation toggle button if javascript is supported */
+  .js-astro .nav-collapse .nav-toggle-basic-left {
+    display: block;
+    visibility: visible;
+    float: right; }
+
+  /*  Hide navigation items if javascript is supported */
+  .js-astro .nav-collapse .nav-menu-basic-left {
+    max-height: 0;
+    overflow: hidden;
+    /*  CSS3 animation for when menu content expands */
+    transition: all 0.5s ease-in; }
+
+  /*  When collapsed element has the .active class, show it
+   *  Uses max-height instead of display: none to allow for
+   *  CSS3 animations, which don't work on display values. */
+  .js-astro .nav-collapse .nav-menu-basic-left.active {
+    max-height: 999em; }
+
+  /*  Display navigation items as full-width, stacked blocks when javascript supported */
+  .js-astro .nav-collapse .nav-menu-basic-left li {
+    display: block;
+    width: 100%;
+    padding-top: calc-em(4px);
+    padding-bottom: calc-em(4px);
+    box-sizing: border-box; } }
+@media (min-width: 37em) {
+  .nav-menu-basic-left {
+    padding-top: .8em;
+    padding-bottom: 1px; } }
+@media (min-width: 47.5em) {
+  .nav-basic-left {
+    text-align: right; }
+    .nav-basic-left > li {
+      margin-right: 0;
+      margin-left: 4%; } }
+@media (min-width: 64em) {
+  .nav-basic-left > li {
+    margin-right: 2%; } }
+#main h1 {
+  font-family: "Vast Shadow", Rockwell, "Courier Bold", Courier, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  text-transform: uppercase;
+  text-align: center;
+  color: #5E584D;
+  margin-bottom: 1em; }
+  @media screen and (min-width: 47.5em) {
+    #main h1 {
+      margin-left: 240px; } }
+
+#main a {
+  text-decoration: underline; }
+
+.wrapper-footer {
+  padding-top: 1px;
+  background-color: #4C4640;
+  border-top: 3px solid #5E584D;
+  color: #aba599;
+  font-size: .75em; }
+
+.wrapper-footer a {
+  color: #e76451; }
+
+.wrapper-footer a:hover {
+  color: #EB9728; }
+
+.video-box {
+  background: #5E584D;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 1em;
+  height: 0;
+  overflow: hidden; }
+
+.video-box object, .video-box iframe, .video-box embed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+
+#slidy-container {
+  width: 98%;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4); }
+
+#slidy-quote-container {
+  width: 100%;
+  margin: 0 auto; }
+
+.circular, .profile-img {
+  border-radius: 100%; }
+
+.bio {
+  padding-bottom: .7em;
+  border-bottom: 1px #747678 solid; }
+
+.profile-img {
+  width: 100%;
+  max-width: 333px;
+  max-height: 333px; }
+  @media (min-width: 25em) {
+    .profile-img {
+      width: 40%;
+      height: auto;
+      float: right;
+      margin-left: .9em;
+      margin-bottom: .9em; } }
+  @media (min-width: 47.5em) {
+    .profile-img {
+      width: 30%; } }
+
+.player {
+  font-size: .89em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+input {
+  margin-top: .75em; }
+
+.button {
+  display: inline-block;
+  font-size: 15px;
+  background-color: #A54A25;
+  color: #EBEBE7;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 6px;
+  border: 1px solid #90381E;
+  padding: 8px 11px;
+  line-height: 1.2;
+  font-weight: normal; }
+
+.button:hover {
+  background-color: #90381E; }
+
+/* By default this is an h3 that appears above each artist's list of shows */
+/* This span contains the RSS and iCal links for the artist */
+span.gigpress-artist-subscriptions {
+  margin-left: 5px;
+  float: right; }
+
+/* Default wrapper for the year/month menu */
+.gigpress-menu-container {
+  padding: 5px 0;
+  text-align: right; }
+
+/* Meet the table that displays our shows */
+.gigpress-table {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .85em;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  background-color: #414141;
+  color: #EBEBE7;
+  border-top: 1px solid #747678;
+  margin: 0.5em 0 1em 0; }
+
+.gigpress-table a {
+  color: #FFDF85; }
+
+.gigpress-table a:hover {
+  color: #EB9728; }
+
+/* This is for the main header cells containing the column labels */
+tr.gigpress-header th {
+  font-weight: bold;
+  font-family: bitter, Georgia, serif; }
+
+/* Generic class for the table header cells */
+.gigpress-table th {
+  padding: 6px 8px;
+  vertical-align: middle;
+  text-align: left;
+  border-bottom: 1px solid #747678; }
+
+/* This is for the tour name header cells */
+th.gigpress-heading {
+  background-color: #535353;
+  border-bottom: 1px solid #747678;
+  font-weight: bold;
+  font-family: bitter, Georgia, serif; }
+
+/* This is for the tour name headings, whichever one you're using */
+th.gigpress-heading h1, th.gigpress-heading h2, th.gigpress-heading h3, th.gigpress-heading h4, th.gigpress-heading h5 {
+  margin: 0; }
+
+/* Applies to all cells in the table */
+.gigpress-table td {
+  padding: 6px 8px;
+  vertical-align: middle;
+  text-align: left; }
+
+/* Applies to the first row of each show listing */
+.gigpress-row td {
+  border-bottom: 1px solid #747678; }
+
+/* To set an alternating row style */
+/* Individual classes for the label header cells that start the table */
+/* Likewise, individual classes for the content cells */
+/* Style for rows within a tour */
+tr.gigpress-tour td {
+  background-color: #505050; }
+
+/* Style for the first row after a tour ends in the list */
+tr.gigpress-divider.gigpress-row td {
+  border-top: 2px solid #747678; }
+
+/* The secondary row for each show, contains time, admission, etc */
+tr.gigpress-info td {
+  font-size: 90%;
+  color: #EBEBE7;
+  border-bottom: 1px solid #747678; }
+
+/* Fix for themes that hide .description */
+tr.gigpress-info td.description {
+  visibility: visible !important; }
+
+/* Greys-out cancelled shows */
+tr.gigpress-row.cancelled, tr.gigpress-info.cancelled, tr.cancelled span.gigpress-info-label, tr.cancelled span.gigpress-info-item {
+  color: #A54A25; }
+
+/* This wraps each of the bits of info in the "info" cell */
+/* For the labels for address, admission, etc in the "info" cell */
+span.gigpress-info-label {
+  color: #EBEBE7;
+  font-weight: bold; }
+
+/* In case you want to style the "Buy Tickets" link */
+a.gigpress-tickets-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1px 3px;
+  color: #FFFFFF;
+  background: #EB9728;
+  border: 1px solid #A54A25;
+  background: #EB9728;
+  color: #FFF;
+  border: none; }
+
+a.gigpress-tickets-link:hover {
+  background-color: #414141;
+  color: #EB9728; }
+
+/* Notices for Cancelled or Sold Out shows */
+strong.gigpress-cancelled, strong.gigpress-soldout {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1px 3px;
+  color: #FFFFFF;
+  background: #E4503B;
+  border: 1px solid #A54A25;
+  background: #E4503B;
+  color: #FFF;
+  border: none; }
+
+/* In case you want to style the Googlefied address link */
+a.gigpress-address {
+  color: #d4d4cb; }
+
+/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
+td.gigpress-links-cell {
+  vertical-align: top; }
+
+.gigpress-calendar-add {
+  position: relative; }
+
+a.gigpress-links-toggle {
+  display: block;
+  text-indent: -9999px;
+  width: 11px;
+  height: 11px;
+  background: transparent url(../images/calendar-toggle.png) no-repeat left top;
+  cursor: pointer; }
+
+a.gigpress-links-toggle:hover {
+  background-position: -11px 0px; }
+
+a.gigpress-link-active {
+  background-position: -33px; }
+
+a.gigpress-link-active:hover {
+  background-position: -22px; }
+
+div.gigpress-calendar-links {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: -1.2em;
+  width: 15em;
+  padding-left: 7px;
+  background: transparent url(../images/calendar-links-bg.png) no-repeat left center; }
+
+.gigpress-calendar-links-inner {
+  background-color: #F3F3F3;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 16px;
+  border: 1px solid #CCC;
+  border-width: 1px 1px 1px 0; }
+
+div.gigpress-calendar-links span {
+  display: block; }
+
+/* These are for the RSS/iCal subscribe links */
+p.gigpress-subscribe {
+  text-align: left;
+  color: #999; }
+
+p.gigpress-subscribe a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 12px;
+  margin: 0 3px; }
+
+a.gigpress-rss, a.gigpress-rss:hover {
+  background: transparent url(../images/feed-icon-12x12.png) no-repeat left center; }
+
+a.gigpress-ical, a.gigpress-ical:hover {
+  background: transparent url(../images/icalendar-icon.gif) no-repeat left center; }
+
+/* These styles are for the sidebar listing */
+/* This is the unordered list that holds the dates */
+/* Generic styles for the list items within */
+/* For artist headings in the sidebar */
+/* For tour headings in the sidebar */
+span.gigpress-list-tour-heading {
+  font-weight: bold;
+  font-size: 110%; }
+
+/* So if you like you can style each alternating list item differently */
+/* So if you like you can style the date differently */
+span.gigpress-sidebar-date {
+  font-weight: bold;
+  display: block; }
+
+/* Sold Out shows in the sidebar */
+ul.gigpress-listing strong.gigpress-soldout, ul.gigpress-listing a.gigpress-tickets-link {
+  display: block; }
+
+/* These styles control the Related Show list that appears in the body of Related Posts */
+ul.gigpress-related-show {
+  margin: 0 0 2em; }
+
+ul.gigpress-related-show ul, ul.gigpress-related-show li {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0; }
+
+.gigpress-related-label {
+  font-weight: bold; }
+
+/* This is just to include data for hcalendar support, but hide it from view */
+.hide {
+  display: none; }
+
+/* Stop Firefox from underlining our abbreviated dates */
+abbr {
+  border: none;
+  text-decoration: none;
+  font-size: 100%; }
+
+.hero {
+  font-size: 1.125em;
+  color: #5E584D;
+  font-style: italic; }
+  @media screen and (min-width: 47.5em) {
+    .hero {
+      margin-left: 250px; } }
+
+.quote {
+  background-color: #90381E;
+  color: #FFFFFF;
+  padding: .25em .5em; }
+
+.quote blockquote {
+  margin-top: 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  border-left: 2px #E4503B solid; }
+
+.quote figcaption {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  text-align: center;
+  color: #c2bdb5; }
+
+@media (min-width: 37em) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125em; } }
+@media (min-width: 47.5em) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05em; }
+
+  h2 {
+    font-size: 2em;
+    line-height: 1.25em; }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em; }
+
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.22222222em; } }
+@media (min-width: 64em) {
+  body {
+    font-size: 18px;
+    line-height: 1.4; }
+
+  h1 {
+    font-size: 3.5em;
+    line-height: 1em; }
+
+  h2 {
+    font-size: 2.25em; }
+
+  h3 {
+    font-size: 1.75em; }
+
+  h4 {
+    font-weight: bold; } }
