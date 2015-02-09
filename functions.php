@@ -19,8 +19,9 @@ function tumbleweeds2015_setup() {
 	// Define theme path constants
 	define( '_HOME_URI', home_url() );
 	define( '_THEME_URI', get_stylesheet_directory_uri() );
-	define( '_THEME_IMAGES', _THEME_URI . '/images' );
+	define( '_THEME_IMAGES', _THEME_URI . '/img' );
 	define( '_THEME_JS', _THEME_URI . '/js' );
+	define( '_THEME_CSS', _THEME_URI . '/css' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -90,6 +91,8 @@ add_action( 'admin_menu', 'tumbleweeds2015_remove_menus' );
  */
 function tumbleweeds2015_scripts() {
 	wp_enqueue_style( 'tumbleweeds2015-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'style', _THEME_CSS . '/style.css' );
+	wp_enqueue_style( 'theme-style', _THEME_CSS . '/theme.css' );
 	wp_enqueue_script( 'tumbleweeds2015-scripts', _THEME_JS . '/scripts.js', array('jquery'), '20150122', true );
 	wp_enqueue_script( 'cssslidy', _THEME_JS . '/cssslidy.js', array(), '20150122', true );
 }

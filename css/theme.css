@@ -1,0 +1,14 @@
+/* THEME ONLY CSS */
+
+
+.noGigs {
+    padding: 20px;
+}
+.quote {
+    clear:both;
+}
+.quote figcaption,
+.quote span.figcaption {
+    display:block;
+    font-family: bitter,Georgia,serif;
+}
