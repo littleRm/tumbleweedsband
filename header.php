@@ -15,7 +15,6 @@
 <link rel="shortcut icon" type="image/ico" href="<?=_THEME_IMAGES;?>/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 <!-- Styles -->
 <link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
 <script src="//use.edgefonts.net/bitter:n4,i4,n7.js"></script> 
