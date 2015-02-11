@@ -13,7 +13,7 @@
 
 <header class="wrapper-footer">
 	<div class="container">
-		<p>&copy; <?=date("Y");?> The Tumbleweeds. <a href="<?=_HOME_URI;?>/contact">Contact us</a>.</p>
+		<p>&copy; <?=date("Y");?> The Tumbleweeds. <a href="<?=_HOME_URI;?>/booking">Contact us</a>.</p>
 	</div>
 </header>
 
