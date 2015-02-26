@@ -12,3 +12,11 @@
     display:block;
     font-family: bitter,Georgia,serif;
 }
+section.not-found {
+	padding:0 0 50px;
+}
+@media (min-width: 47.5em) {
+	section.not-found {
+		padding:0 0 50px 190px;
+	}
+}
