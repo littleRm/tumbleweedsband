@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /wp-content/themes/tumbleweedsband/
+
+RewriteRule ^images/(.*)$ img/$1 [R,L]
+RewriteRule ^scripts/(.*)$ js/$1 [R,L]
