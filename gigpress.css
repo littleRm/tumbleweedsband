@@ -1,0 +1,232 @@
+
+/* GIGPRESS CSS OVERIDES */
+
+.bio:before, span.gigpress-info-item:before,
+.bio:after, span.gigpress-info-item:after {
+	content: " ";
+	display: table;
+}
+span.gigpress-info-item:after {
+	clear: both;
+}
+
+/* By default this is an h3 that appears above each artist's list of shows */
+/* This span contains the RSS and iCal links for the artist */
+span.gigpress-artist-subscriptions {
+	margin-left: 5px;
+	float: right;
+}
+/* Default wrapper for the year/month menu */
+.gigpress-menu-container {
+	padding: 5px 0;
+	text-align: right;
+}
+/* Meet the table that displays our shows */
+.gigpress-table {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .85em;
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	background-color: #414141;
+	color: #EBEBE7;
+	border-top: 1px solid #747678;
+	margin: 0.5em 0 1em 0;
+}
+.gigpress-table a {
+	color: #FFDF85;
+}
+.gigpress-table a:hover {
+	color: #EB9728;
+}
+/* This is for the main header cells containing the column labels */
+tr.gigpress-header th {
+	font-weight: bold;
+	font-family: bitter, Georgia, serif;
+}
+/* Generic class for the table header cells */
+.gigpress-table th {
+	padding: 6px 8px;
+	vertical-align: middle;
+	text-align: left;
+	border-bottom: 1px solid #747678;
+}
+/* This is for the tour name header cells */
+th.gigpress-heading {
+	background-color: #535353;
+	border-bottom: 1px solid #747678;
+	font-weight: bold;
+	font-family: bitter, Georgia, serif;
+}
+/* This is for the tour name headings, whichever one you're using */
+th.gigpress-heading h1, th.gigpress-heading h2, th.gigpress-heading h3, th.gigpress-heading h4, th.gigpress-heading h5 {
+	margin: 0;
+}
+/* Applies to all cells in the table */
+.gigpress-table td {
+	padding: 6px 8px;
+	vertical-align: middle;
+	text-align: left;
+}
+/* Applies to the first row of each show listing */
+.gigpress-row td {
+	border-bottom: 1px solid #747678;
+}
+/* To set an alternating row style */
+/* Individual classes for the label header cells that start the table */
+/* Likewise, individual classes for the content cells */
+/* Style for rows within a tour */
+tr.gigpress-tour td {
+	background-color: #505050;
+}
+/* Style for the first row after a tour ends in the list */
+tr.gigpress-divider.gigpress-row td {
+	border-top: 2px solid #747678;
+}
+/* The secondary row for each show, contains time, admission, etc */
+tr.gigpress-info td {
+	font-size: 90%;
+	color: #EBEBE7;
+	border-bottom: 1px solid #747678;
+}
+/* Fix for themes that hide .description */
+tr.gigpress-info td.description {
+	visibility: visible !important;
+}
+/* Greys-out cancelled shows */
+tr.gigpress-row.cancelled, tr.gigpress-info.cancelled, tr.cancelled span.gigpress-info-label, tr.cancelled span.gigpress-info-item {
+	color: #A54A25;
+}
+/* This wraps each of the bits of info in the "info" cell */
+/* For the labels for address, admission, etc in the "info" cell */
+span.gigpress-info-label {
+	color: #EBEBE7;
+	font-weight: bold;
+}
+/* In case you want to style the "Buy Tickets" link */
+a.gigpress-tickets-link {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1px 3px;
+	color: #FFFFFF;
+	background: #EB9728;
+	border: 1px solid #A54A25;
+	background: #EB9728;
+	color: #FFF;
+	border: none;
+}
+a.gigpress-tickets-link:hover {
+	background-color: #414141;
+	color: #EB9728;
+}
+/* Notices for Cancelled or Sold Out shows */
+strong.gigpress-cancelled, strong.gigpress-soldout {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 1px 3px;
+	color: #FFFFFF;
+	background: #E4503B;
+	border: 1px solid #A54A25;
+	background: #E4503B;
+	color: #FFF;
+	border: none;
+}
+/* In case you want to style the Googlefied address link */
+a.gigpress-address {
+	color: #d4d4cb;
+}
+/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
+td.gigpress-links-cell {
+	vertical-align: top;
+}
+.gigpress-calendar-add {
+	position: relative;
+}
+a.gigpress-links-toggle {
+	display: block;
+	text-indent: -9999px;
+	width: 11px;
+	height: 11px;
+	background: transparent url(img/calendar-toggle.png) no-repeat left top;
+	cursor: pointer;
+}
+a.gigpress-links-toggle:hover {
+	background-position: -11px 0px;
+}
+a.gigpress-link-active {
+	background-position: -33px;
+}
+a.gigpress-link-active:hover {
+	background-position: -22px;
+}
+div.gigpress-calendar-links {
+	display: none;
+	position: absolute;
+	left: 20px;
+	top: -1.2em;
+	width: 15em;
+	padding-left: 7px;
+	background: transparent url(img/calendar-links-bg.png) no-repeat left center;
+}
+.gigpress-calendar-links-inner {
+	background-color: #F3F3F3;
+	padding: 6px 8px;
+	font-size: 11px;
+	line-height: 16px;
+	border: 1px solid #CCC;
+	border-width: 1px 1px 1px 0;
+}
+div.gigpress-calendar-links span {
+	display: block;
+}
+/* These are for the RSS/iCal subscribe links */
+p.gigpress-subscribe {
+	text-align: left;
+	color: #999;
+}
+p.gigpress-subscribe a {
+	display: inline-block;
+	text-indent: -9999px;
+	width: 12px;
+	margin: 0 3px;
+}
+a.gigpress-rss, a.gigpress-rss:hover {
+	background: transparent url(img/feed-icon-12x12.png) no-repeat left center;
+}
+a.gigpress-ical, a.gigpress-ical:hover {
+	background: transparent url(img/icalendar-icon.gif) no-repeat left center;
+}
+/* These styles are for the sidebar listing */
+/* This is the unordered list that holds the dates */
+/* Generic styles for the list items within */
+/* For artist headings in the sidebar */
+/* For tour headings in the sidebar */
+span.gigpress-list-tour-heading {
+	font-weight: bold;
+	font-size: 110%;
+}
+/* So if you like you can style each alternating list item differently */
+/* So if you like you can style the date differently */
+span.gigpress-sidebar-date {
+	font-weight: bold;
+	display: block;
+}
+/* Sold Out shows in the sidebar */
+ul.gigpress-listing strong.gigpress-soldout, ul.gigpress-listing a.gigpress-tickets-link {
+	display: block;
+}
+/* These styles control the Related Show list that appears in the body of Related Posts */
+ul.gigpress-related-show {
+	margin: 0 0 2em;
+}
+ul.gigpress-related-show ul, ul.gigpress-related-show li {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.gigpress-related-label {
+	font-weight: bold;
+}
+.gigpress-subscribe {
+	display:none;
+}
