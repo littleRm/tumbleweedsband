@@ -9,14 +9,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<div style="clear:both;"></div>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h2><?php _e( 'Oops! That page can&rsquo;t be found.', 'tumbleweeds2015' ); ?></h2>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try searching?', 'tumbleweeds2015' ); ?></p>
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe&nbsp;try&nbsp;searching?', 'tumbleweeds2015' ); ?></p>
 
 					<?php get_search_form(); ?>
 
