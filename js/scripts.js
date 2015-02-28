@@ -91,7 +91,8 @@ jQuery(document).ready(function($) {
 	log("document ready");
 	
 	//initialize slideshow
-	cssSlidy();
+	if($("#slidy-container").length)
+		cssSlidy();
 	
 	
 	astro.init({
